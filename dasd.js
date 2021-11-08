@@ -1,12 +1,14 @@
-function evaporator(content, evap_per_day, threshold){
-    let capacity = 100;
-    count = 0;
-    for (let i = 0; capacity > threshold; i++) {
-        capacity -= capacity * (evap_per_day/100)
-        count ++;
-
+function checkObj(obj, checkProp) {
+    // Only change code below this line
+    let x = "";
+    if (obj.hasOwnProperty(checkProp)){
+        let x = obj[checkProp];
+        return x;
+    } else {
+        return "Not Found"
     }
-    return count;
+
+    // Only change code above this line
 }
 
-console.log(evaporator(0,11,10));
+checkObj({gift: "pony", pet: "kitten", bed: "sleigh"}, "gift")
