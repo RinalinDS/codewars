@@ -1,4 +1,4 @@
-var number=function(array){
+git var number=function(array){
     let str = [];
     let counter = 1;
        for (let i = 0; i < array.length; i++){
