@@ -1,4 +1,4 @@
-git var number=function(array){
+var number=function(array){
     let str = [];
     let counter = 1;
        for (let i = 0; i < array.length; i++){
@@ -10,4 +10,4 @@ git var number=function(array){
 }
 
 
-console.log((number([])))
+console.log((number([4 ,5 ,7 ])))
